@@ -1,27 +1,20 @@
-#container {
-  text-align: center;
+ion-header {
+  ion-toolbar {
+    --min-height: 100px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    ion-buttons {
+      padding: 0 2.5%;
+      
+      ion-button {
+        vertical-align: middle;
+      }
+      
+      img {
+        vertical-align: middle;
+        margin: auto auto;
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+        filter: invert(12%) sepia(86%) saturate(6368%) hue-rotate(353deg) brightness(104%) contrast(86%);
+      }
+    }
+  }
 }
