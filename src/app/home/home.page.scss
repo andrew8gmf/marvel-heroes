@@ -1,20 +1,41 @@
 ion-header {
-  ion-toolbar {
-    --min-height: 100px;
-
-    ion-buttons {
-      padding: 0 2.5%;
-      
-      ion-button {
-        vertical-align: middle;
+  .appBar {
+    ion-toolbar {
+      --min-height: 100px;
+  
+      ion-buttons {
+        padding: 0 2.5%;
+        
+        ion-button {
+          vertical-align: middle;
+        }
+        
+        img {
+          vertical-align: middle;
+          margin: auto auto;
+  
+          filter: invert(12%) sepia(86%) saturate(6368%) hue-rotate(353deg) brightness(104%) contrast(86%);
+        }
       }
-      
-      img {
-        vertical-align: middle;
-        margin: auto auto;
+    }
+  }
+}
 
-        filter: invert(12%) sepia(86%) saturate(6368%) hue-rotate(353deg) brightness(104%) contrast(86%);
-      }
+ion-content {
+  .head {
+    padding: 0 5%;
+
+    ion-card-subtitle {
+      color: #B7B7C8;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    ion-card-title {
+      color: #313140;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 100%;
     }
   }
 }
