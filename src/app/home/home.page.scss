@@ -1,20 +1,27 @@
 ion-header {
   .appBar {
     ion-toolbar {
-      --min-height: 100px;
+      height: 64px;
   
       ion-buttons {
-        padding: 0 2.5%;
+        padding: 0 6.93%;
         
         ion-button {
+          padding: 0;
+          margin: 0;
           vertical-align: middle;
+
+          ion-icon {
+            width: 20px;
+            height: 15px;
+          }
         }
         
         img {
+          width: 71px;
+          height: 26px;
           vertical-align: middle;
           margin: auto auto;
-  
-          filter: invert(12%) sepia(86%) saturate(6368%) hue-rotate(353deg) brightness(104%) contrast(86%);
         }
       }
     }
