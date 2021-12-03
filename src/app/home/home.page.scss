@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Gilroy Semi-bold";
+  src: url("../../assets/fonts/gilroy-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Heavy";
+  src: url("../../assets/fonts/gilroy-heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 ion-header {
   .appBar {
     ion-toolbar {
@@ -5,16 +19,10 @@ ion-header {
   
       ion-buttons {
         padding: 0 6.93%;
-        
-        ion-button {
-          padding: 0;
-          margin: 0;
-          vertical-align: middle;
 
-          ion-icon {
-            width: 20px;
-            height: 15px;
-          }
+        ion-icon {
+          width: 20px;
+          height: 15px;
         }
         
         img {
@@ -30,15 +38,18 @@ ion-header {
 
 ion-content {
   .head {
-    padding: 0 5%;
+    margin-top: 24px;
+    padding: 0 6.93%;
 
     ion-card-subtitle {
+      font-family: "Gilroy Semi-bold";
       color: #B7B7C8;
       font-weight: 600;
       font-size: 14px;
       margin-bottom: 8px;
     }
     ion-card-title {
+      font-family: "Gilroy Heavy";
       color: #313140;
       font-weight: 900;
       font-size: 32px;
