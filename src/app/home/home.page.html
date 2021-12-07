@@ -17,4 +17,16 @@
     <ion-card-subtitle>Bem vindo ao Marvel Heroes</ion-card-subtitle>
     <ion-card-title>Escolha o seu personagem</ion-card-title>
   </div>
+
+  <div class="categories">
+    <ion-toolbar>
+      <ion-slides [options]="slidesOptions">
+        <ion-slide *ngFor="let category of categories">
+          <div class="container" [style.background]="category.color">
+            <ion-icon [src]="category.icon"></ion-icon>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-toolbar>
+  </div>
 </ion-content>

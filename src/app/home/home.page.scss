@@ -56,4 +56,26 @@ ion-content {
       line-height: 100%;
     }
   }
+
+  .categories {
+    margin-top: 32px;
+    padding: 0 6.93%;
+    
+    ion-slide {
+      .container {
+        width: 56px;
+        padding: 10px;
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        border-radius: 50%;
+
+        ion-icon {
+          filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(103%) contrast(103%);
+        }
+      }
+    }
+  }
 }
