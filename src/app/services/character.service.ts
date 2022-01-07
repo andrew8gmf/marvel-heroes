@@ -9,24 +9,8 @@ export class CharacterService {
     
     constructor(private http: HttpClient) { }
 
-    getHeroes(character: number | string): Observable<CharacterList> {
-        return this.http.get<CharacterList>(this.baseUrl + 'heroes/' + character);
-    }
-
-    getVillains(character: number | string): Observable<CharacterList> {
-        return this.http.get<CharacterList>(this.baseUrl + 'villains/' + character);
-    }
-
-    getAntiHeroes(character: number | string): Observable<CharacterList> {
-        return this.http.get<CharacterList>(this.baseUrl + 'antiHeroes/' + character);
-    }
-
-    getAliens(character: number | string): Observable<CharacterList> {
-        return this.http.get<CharacterList>(this.baseUrl + 'aliens/' + character);
-    }
-
-    getHumans(character: number | string): Observable<CharacterList> {
-        return this.http.get<CharacterList>(this.baseUrl + 'humans/' + character);
+    getCharacters(): Observable<CharacterList> {
+        return this.http.get<CharacterList>(this.baseUrl + 'db');
     }
     
 }
