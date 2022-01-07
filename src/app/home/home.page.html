@@ -20,10 +20,24 @@
 
   <div class="categories">
     <ion-toolbar>
-      <ion-slides [options]="slidesOptions">
-        <ion-slide *ngFor="let category of categories">
+      <ion-slides [options]="iconSlideOptions">
+        <ion-slide *ngFor="let category of iconCategories">
           <div class="container" [style.background]="category.color">
             <ion-icon [src]="category.icon"></ion-icon>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-toolbar>
+  </div>
+
+  <div class="lists">
+    <ion-toolbar *ngFor="let character of characters ; let i=index">
+      <ion-card-title>{{categories[i].name}}</ion-card-title>
+      <ion-slides [options]="slideOptions">
+        <ion-slide *ngFor="let char of character">
+          <div class="container">
+            <ion-card-subtitle>{{char.alterEgo}}</ion-card-subtitle>
+            <ion-card-title>{{char.name}}</ion-card-title>
           </div>
         </ion-slide>
       </ion-slides>
