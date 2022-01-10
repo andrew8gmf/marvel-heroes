@@ -32,7 +32,10 @@
 
   <div class="lists">
     <ion-toolbar *ngFor="let character of characters ; let i=index">
-      <ion-card-title>{{categories[i].name}}</ion-card-title>
+      <div class="title-container">
+        <ion-card-title>{{categories[i].name}}</ion-card-title>
+        <ion-card-subtitle>Ver tudo</ion-card-subtitle>
+      </div>
       <ion-slides [options]="slideOptions">
         <ion-slide *ngFor="let char of character">
           <div class="img-container">

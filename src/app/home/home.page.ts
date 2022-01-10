@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CharacterList } from '../models/character.list';
 import { CharacterService } from '../services/character.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
