@@ -144,29 +144,37 @@ ion-content {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 12px;
             width: 140px;
             height: 230px;
-            border-radius: 16px;
-            background-color: black;
 
-            ion-card-subtitle {
-              font-family: "Gilroy Medium";
-              color: #FFF;
-              font-weight: 500;
-              font-size: 10px;
-              margin-bottom: 2px;
-              text-align: left;
+            img {
+              position: absolute;
+              object-fit: fill;
+              object-position: center;
+              border-radius: 16px;
             }
 
-            ion-card-title {
-              font-family: "Gilroy Heavy";
-              color: #FFF;
-              font-weight: 900;
-              font-size: 20px;
-              line-height: 100%;
-              text-align: left;
-              margin: 0;
+            .text-container {
+              padding: 12px;
+
+              ion-card-subtitle {
+                font-family: "Gilroy Medium";
+                color: #FFF;
+                font-weight: 500;
+                font-size: 10px;
+                margin-bottom: 2px;
+                text-align: left;
+              }
+  
+              ion-card-title {
+                font-family: "Gilroy Heavy";
+                color: #FFF;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 100%;
+                text-align: left;
+                margin: 0;
+              }
             }
           }
         }

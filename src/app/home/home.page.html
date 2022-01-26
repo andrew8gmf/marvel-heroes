@@ -31,7 +31,7 @@
   </div>
 
   <div class="lists">
-    <ion-toolbar *ngFor="let character of characters ; let i=index">
+    <ion-toolbar *ngFor="let character of characters ; let i = index">
       <div class="title-container">
         <ion-card-title>{{categories[i].name}}</ion-card-title>
         <ion-card-subtitle>Ver tudo</ion-card-subtitle>
@@ -39,8 +39,11 @@
       <ion-slides [options]="slideOptions">
         <ion-slide *ngFor="let char of character">
           <div class="img-container">
-            <ion-card-subtitle>{{char.alterEgo}}</ion-card-subtitle>
-            <ion-card-title>{{char.name}}</ion-card-title>
+            <img [src]="getUrl('../assets/chars/',char.imagePath)" alt="">
+            <div class="text-container">
+              <ion-card-subtitle>{{char.alterEgo}}</ion-card-subtitle>
+              <ion-card-title>{{char.name}}</ion-card-title>
+            </div>
           </div>
         </ion-slide>
       </ion-slides>
