@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-characters',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharactersPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.go();
+  }
 
   ngOnInit() {
+  }
+
+  go() {
+    this.router.navigate(['characters/1']);
   }
 
 }
