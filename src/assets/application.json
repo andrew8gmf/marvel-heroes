@@ -1,6 +1,7 @@
 {
 	"heroes": [
 		{
+			"id": 1,
 			"name": "Homem Aranha",
 			"alterEgo": "Peter Parker",
 			"imagePath": "spider-man.png",
@@ -33,6 +34,7 @@
 			]
 		},
 		{
+			"id": 2,
 			"name": "Pantera Negra",
 			"alterEgo": "T'Challa",
 			"imagePath": "black-panther.png",
@@ -64,6 +66,7 @@
 			]
 		},
 		{
+			"id": 3,
 			"name": "Homem de Ferro",
 			"alterEgo": "Tony Stark",
 			"imagePath": "iron-man.png",
@@ -103,6 +106,7 @@
 	],
 	"villains": [
 		{
+			"id": 4,
 			"name": "Caveira Vermelha",
 			"alterEgo": "Jöhann Schmidt",
 			"imagePath": "red-skull.png",
@@ -132,6 +136,7 @@
 			]
 		},
 		{
+			"id": 5,
 			"name": "Doutor Destino",
 			"alterEgo": "Victor Von Doom",
 			"imagePath": "dr-doom.png",
@@ -161,6 +166,7 @@
 			]
 		},
 		{
+			"id": 6,
 			"name": "Duende Verde",
 			"alterEgo": "Norman Osborn",
 			"imagePath": "green-goblin.png",
@@ -191,6 +197,7 @@
 	],
 	"antiHeroes": [
 		{
+			"id": 7,
 			"name": "Deadpool",
 			"alterEgo": "Wade Wilson",
 			"imagePath": "deadpool.png",
@@ -220,6 +227,7 @@
 			]
 		},
 		{
+			"id": 8,
 			"name": "Venom",
 			"alterEgo": "Eddie Brock",
 			"imagePath": "venom.png",
@@ -248,6 +256,7 @@
 			]
 		},
 		{
+			"id": 9,
 			"name": "Justiceiro",
 			"alterEgo": "Francis Castle",
 			"imagePath": "punisher.png",
@@ -278,6 +287,7 @@
 	],
 	"aliens": [
 		{
+			"id": 10,
 			"name": "Thanos",
 			"alterEgo": "Deviant",
 			"imagePath": "thanos.png",
@@ -308,6 +318,7 @@
 			]
 		},
 		{
+			"id": 11,
 			"name": "Ronan",
 			"alterEgo": "Kree",
 			"imagePath": "ronan.png",
@@ -337,6 +348,7 @@
 			]
 		},
 		{
+			"id": 12,
 			"name": "Talos",
 			"alterEgo": "Skrull",
 			"imagePath": "talos.png",
@@ -367,6 +379,7 @@
 	],
 	"humans": [
 		{
+			"id": 13,
 			"name": "Howard Stark",
 			"alterEgo": "Homem de Ferro",
 			"imagePath": "howard-stark.png",
@@ -400,6 +413,7 @@
 			]
 		},
 		{
+			"id": 14,
 			"name": "Mary Jane",
 			"alterEgo": "Homem Aranha",
 			"imagePath": "mary-jane.png",
@@ -430,6 +444,7 @@
 			]
 		},
 		{
+			"id": 15,
 			"name": "Happy Hogan",
 			"alterEgo": "Homem de Ferro",
 			"imagePath": "happy-hogan.png",
