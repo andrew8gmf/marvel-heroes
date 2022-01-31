@@ -46,8 +46,9 @@ export class HomePage {
     return x+y;
   }
 
-  go() {
-    this.router.navigate(['characters']);
+  go(x,y) {
+    const z = x+y
+    this.router.navigate([z]);
   }
 
 }
