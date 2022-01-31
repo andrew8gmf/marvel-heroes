@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CharacterList } from '../models/character.list';
 import { CharacterService } from '../services/character.service';
 
@@ -28,7 +29,7 @@ export class HomePage {
 
   characters: CharacterList[] = [];
 
-  constructor(private characterService: CharacterService) {
+  constructor(private characterService: CharacterService, private router: Router) {
     this.getCharacters();
   }
 
@@ -41,8 +42,12 @@ export class HomePage {
     });
   }
 
-  getUrl(x,y){
+  getUrl(x,y) {
     return x+y;
+  }
+
+  go() {
+    this.router.navigate(['characters']);
   }
 
 }
