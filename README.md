@@ -5,7 +5,7 @@
 </h4>
 
 <h4 align="center">
-    <img alt="MARVEL" style="border-width:0" src=".github/logo.svg" width="720px"/>
+    <img alt="MARVEL" style="border-width:0" src=".github/logo.svg" width="400px"/>
 </h4>
 
 <h2 id="about">About</h2>
