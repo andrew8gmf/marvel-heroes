@@ -5,7 +5,7 @@
 </h4>
 
 <h4 align="center">
-    <img alt="MARVEL" style="border-width:0" src=".github/logo.svg"/>
+    <img alt="MARVEL" style="border-width:0" src=".github/logo.svg" width="720px"/>
 </h4>
 
 <h2 id="about">About</h2>
@@ -17,7 +17,7 @@ The challenge is to create an application that presents the characters of the Ma
 <h2 id="layout">Layout</h2>
 
 <p align="center">
-    <img alt="MARVEL" style="border-width:0" src=".github/app.png" width="720px" />
+    <img alt="MARVEL" style="border-width:0" src=".github/app.png"/>
 </p>
 
 <h2 id="technologies-used">Technologies used</h2>
