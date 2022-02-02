@@ -17,7 +17,7 @@ The challenge is to create an application that presents the characters of the Ma
 <h2 id="layout">Layout</h2>
 
 <p align="center">
-    <img alt="MARVEL" style="border-width:0" src=".github/app.png"/>
+    <img alt="MARVEL" style="border-width:0" src=".github/app.png" width="720px" />
 </p>
 
 <h2 id="technologies-used">Technologies used</h2>
