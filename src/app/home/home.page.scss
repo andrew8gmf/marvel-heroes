@@ -27,7 +27,7 @@
 }
 
 ion-header {
-  .appBar {
+  .app-bar {
     ion-toolbar {
       height: 64px;
   
@@ -54,33 +54,33 @@ ion-header {
 
 ion-content {
   .head {
+    margin-top: 24px;
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 24px;
     padding: 0 24px;
 
     ion-card-subtitle {
       font-family: "Gilroy Semi-bold";
-      color: #B7B7C8;
       font-weight: 600;
       font-size: 14px;
+      color: #B7B7C8;
       margin-bottom: 8px;
     }
     ion-card-title {
       font-family: "Gilroy Heavy";
-      color: #313140;
       font-weight: 900;
       font-size: 32px;
+      color: #313140;
       line-height: 100%;
     }
   }
 
   .categories {
+    margin-top: 32px;
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
     padding: 0 24px;
     
     ion-slide {
@@ -112,29 +112,31 @@ ion-content {
 
     ion-toolbar {
       .title-container {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-between;
-        padding: 48px 24px 16px 24px;
+        margin-top: 48px;
+        padding: 0 24px;
 
         ion-card-title {
           font-family: "Gilroy Bold";
-          color: #F2264B;
           font-weight: 700;
           font-size: 18px;
+          color: #F2264B;
           line-height: 100%;
         }
 
         ion-card-subtitle {
           font-family: "Gilroy Medium";
-          color: #B7B7C8;
           font-weight: 500;
           font-size: 14px;
+          color: #B7B7C8;
         }
       }
 
       ion-slides {
+        margin-top: 16px;
         margin-left: 16px;
         
         ion-slide {
