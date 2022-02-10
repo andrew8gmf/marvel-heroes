@@ -1,12 +1,13 @@
 export class CharacterList {
-    heroes: Character[];
-    villains: Character[];
-    antiHeroes: Character[];
-    aliens: Character[];
-    humans: Character[];
+    heroes: Character;
+    villains: Character;
+    antiHeroes: Character;
+    aliens: Character;
+    humans: Character;
 }
 
 class Character {
+    id: number;
     name: string;
     alterEgo: string;
     imagePath: string;
