@@ -38,7 +38,7 @@
       </div>
       <ion-slides [options]="slideOptions">
         <ion-slide *ngFor="let character of category">
-          <div class="img-container" (click)="go('characters/',char.id)">
+          <div class="img-container" (click)="go('characters/',character.id)">
             <img [src]="getUrl('../assets/chars/',character.imagePath)" alt="">
             <div class="text-container">
               <ion-card-subtitle>{{character.alterEgo}}</ion-card-subtitle>
