@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { CharacterList } from '../models/character.list';
 import { CharacterService } from '../services/character.service';
 
 @Component({
@@ -9,7 +8,7 @@ import { CharacterService } from '../services/character.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  public iconCategories: Array<any> = [
+  public categoryIcons: Array<any> = [
     { icon: '../../assets/icons/hero.svg', color: 'linear-gradient(180deg, #005BEA 0%, #00C6FB 100%)' },
     { icon: '../../assets/icons/villain.svg', color: 'linear-gradient(180deg, #ED1D24 0%, #ED1F69 100%)' },
     { icon: '../../assets/icons/antihero.svg', color: 'linear-gradient(180deg, #B224EF 0%, #7579FF 100%)' },
@@ -18,7 +17,7 @@ export class HomePage {
   ];
   public iconSlideOptions: any = { slidesPerView: 5, freeMode: true }
 
-  public categories: Array<any> = [
+  public categoryNames: Array<any> = [
     { name: 'Heróis' },
     { name: 'Vilões' },
     { name: 'Anti-heróis' },
@@ -27,18 +26,19 @@ export class HomePage {
   ];
   public slideOptions: any = { slidesPerView: 2.5, freeMode: true }
 
-  characters: CharacterList[] = [];
+  categories = [];
 
   constructor(private characterService: CharacterService, private router: Router) {
-    this.getCharacters();
+    this.getData();
   }
 
-  getCharacters() {
-    this.characterService.getCharacters().subscribe(data => {
+  getData() {
+    this.characterService.getData().subscribe(data => {
+      console.log(data)
       for (var key in data) {
-        this.characters.push(data[key])
+        this.categories.push(data[key])
       }
-      console.log(this.characters)
+      console.log(this.categories)
     });
   }
 

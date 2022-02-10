@@ -9,7 +9,7 @@ export class CharacterService {
     
     constructor(private http: HttpClient) { }
 
-    getCharacters(): Observable<CharacterList> {
+    getData(): Observable<CharacterList> {
         return this.http.get<CharacterList>(this.baseUrl + 'db');
     }
     
