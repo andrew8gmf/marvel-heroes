@@ -16,7 +16,7 @@ export class CharactersPage implements OnInit {
   }
 
   go() {
-    this.router.navigate(['characters/1']);
+    this.router.navigate(['home']);
   }
 
 }
