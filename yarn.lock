@@ -1353,13 +1353,14 @@
     tslib "^2.0.3"
     ws "^7.0.1"
 
-"@ionic/angular@^5.5.2":
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-5.9.3.tgz#9b794607b687e3f19b6d448fbbc1f5398d4a4381"
-  integrity sha512-0j4JZeGHpRvaTH0iyLTiUc4TF01bGVmk0zHZA7qS/OpS/WnGRHYNpVX/F75oODfckNvAa9uacoIMOTu54Cpx3w==
+"@ionic/angular@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@ionic/angular/-/angular-6.0.7.tgz#607d6f2f490dce31e8f5012862bb0bc90f225e22"
+  integrity sha512-/nNuwkt+oqQ44jokT+YKuHqsknGnhkmXn9hcd+RuDVW/Q8mZXK4YQZs8e5Rxs6T2ttkyjUHZg77lF6eS/W76hQ==
   dependencies:
-    "@ionic/core" "5.9.3"
-    tslib "^1.9.3"
+    "@ionic/core" "^6.0.7"
+    jsonc-parser "^3.0.0"
+    tslib "^2.0.0"
 
 "@ionic/cli-framework-output@^2.2.1":
   version "2.2.2"
@@ -1370,13 +1371,13 @@
     debug "^4.0.0"
     tslib "^2.0.1"
 
-"@ionic/core@5.9.3":
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-5.9.3.tgz#8c4d963a3498918509fa7ea1abb5b4ab404a422e"
-  integrity sha512-WM50vVxAAw+MQYqWXKUK4usBgkr7iQ9UWSb6t59mG4ZSy/fPAb7ZIdAjxY0U5i1ykk6A7Ur4B9ZJMpC/a7nnug==
+"@ionic/core@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-6.0.7.tgz#413b44d222164f7715f19a503fc0dfc87393c452"
+  integrity sha512-Yl6itMcddfwfNNa6BjCxXxrIS+vPsrYSTfCmQwVfB4AiuZ5ZgE/jaZ9lMN7b0WIAy56bfX9etRlW+EjnK1znyQ==
   dependencies:
-    "@stencil/core" "^2.4.0"
-    ionicons "^5.5.3"
+    "@stencil/core" "~2.13.0"
+    ionicons "^6.0.0"
     tslib "^2.1.0"
 
 "@ionic/utils-array@2.1.5":
@@ -1579,15 +1580,15 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@stencil/core@^2.4.0":
+"@stencil/core@~2.12.0":
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.12.1.tgz#92364d3e57337b8d36dd9b70cfbed2833929f22d"
   integrity sha512-u24TZ+FEvjnZt5ZgIkLjLpUNsO6Ml3mUZqwmqk81w6RWWz75hgB5p4RFI5rvuErFeh2xvMIGo+pNdG24XUBz1A==
 
-"@stencil/core@~2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.10.0.tgz#acf44b9ae6578a20f0d09bf94296e833beadc885"
-  integrity sha512-15rWMTPQ/sp0lSV82HVCXkIya3QLN+uBl7pqK4JnTrp4HiLrzLmNbWjbvgCs55gw0lULbCIGbRIEsFz+Pe/Q+A==
+"@stencil/core@~2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.13.0.tgz#993fd74a5c7c8fe8af75848ca9df2211cd05b818"
+  integrity sha512-EEKHOHgYpg3/iFUKMXTZJjUayRul7sXDwNw0OGgkEOe4t7JWiibDkzUHuruvpbqEydX+z1+ez5K2bMMY76c2wA==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -3769,6 +3770,13 @@ dom-serializer@~0.1.1:
     domelementtype "^1.3.0"
     entities "^1.1.1"
 
+dom7@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-4.0.4.tgz#8b68c5d8e5e2ed0fddb1cb93e433bc9060c8f3fb"
+  integrity sha512-DSSgBzQ4rJWQp1u6o+3FVwMNnT5bzQbMb+o31TjYYeRi05uAcpF8koxdfzeoe5ElzPmua7W7N28YJhF7iEKqIw==
+  dependencies:
+    ssr-window "^4.0.0"
+
 domelementtype@1, domelementtype@^1.3.0, domelementtype@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.1.tgz#d048c44b37b0d10a7f2a3d5fee3f4333d790481f"
@@ -5226,12 +5234,12 @@ internal-slot@^1.0.3:
     has "^1.0.3"
     side-channel "^1.0.4"
 
-ionicons@^5.5.3:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-5.5.4.tgz#5fef0c44038a630f5bb5f9a7dc83ec158bab95b1"
-  integrity sha512-3ph8X9my3inhabWEZ7N0XRA0MnnNQ1v9a602mLNgWsIXnxE9G5BybIZ/pws/OZZ/hoNlvSjk801N03yL9/FNgQ==
+ionicons@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-6.0.1.tgz#e7dc8c9d6d6cff33f3c64c095b5df645fbedd917"
+  integrity sha512-xQekOJsxH82O7oB+3F60zeRggCdND9pJ/k0E6IJDVUGGlCj5mlyFqNgxUimytKgstPGv3S+3EmCxjefvtGgWUg==
   dependencies:
-    "@stencil/core" "~2.10.0"
+    "@stencil/core" "~2.12.0"
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -5886,7 +5894,7 @@ json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
-jsonc-parser@3.0.0:
+jsonc-parser@3.0.0, jsonc-parser@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
   integrity sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==
@@ -9081,6 +9089,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^4.0.0, ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 ssri@^8.0.0, ssri@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-8.0.1.tgz#638e4e439e2ffbd2cd289776d5ca457c4f51a2af"
@@ -9310,6 +9323,14 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
+swiper@^8.0.5:
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-8.0.5.tgz#3afd16319db118fb5d664f127f10e80e7aa8de9b"
+  integrity sha512-g2YQY9uzhvPPWw/UhH/q8PHOx+cakZrfwwAHyxj1EV6ovlVc3Wy321da9/c71UIP/shBtYOLfzP5L3At567h5w==
+  dependencies:
+    dom7 "^4.0.4"
+    ssr-window "^4.0.2"
+
 symbol-observable@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-4.0.0.tgz#5b425f192279e87f2f9b937ac8540d1984b39205"
@@ -9518,7 +9539,7 @@ tslib@2.3.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
 
-tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==

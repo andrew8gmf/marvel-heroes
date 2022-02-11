@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { CharacterService } from '../services/character.service';
 
@@ -6,6 +6,7 @@ import { CharacterService } from '../services/character.service';
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomePage {
   public categoryIcons: Array<any> = [
