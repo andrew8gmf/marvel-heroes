@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Gilroy Semi-bold";
+  src: url("../../../assets/fonts/gilroy-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Heavy";
+  src: url("../../../assets/fonts/gilroy-heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../../../assets/fonts/gilroy-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("../../../assets/fonts/gilroy-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.img-background {
+  position: absolute;
+  align-self: center;
+  max-width: 375px;
+}
+
+ion-header {
+  .app-bar {
+    ion-toolbar {
+      --background: transparent;
+      height: 64px;
+  
+      ion-buttons {
+        max-width: 375px;
+        margin: auto auto;
+        padding: 0 24px;
+
+        ion-icon {
+          width: 20px;
+          height: 12.48px;
+          margin: auto 0;
+          margin-right: auto;
+          
+          filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(103%) contrast(103%);
+        }
+      }
+    }
+  }
+}
+
+ion-content {
+  --background: transparent;
+
+  .head {
+    margin-top: 228px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+
+    ion-card-subtitle {
+      font-family: "Gilroy Medium";
+      color: #FFF;
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    ion-card-title {
+      font-family: "Gilroy Heavy";
+      color: #FFF;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 100%;
+      max-width: 155px;
+    }
+  }
+
+  .info {
+    margin-top: 48px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+
+    .info-list {
+      height: 48px;
+      background-color: aqua;
+    }
+
+    .info-container {
+      margin-top: 24px;
+      height: 210px;
+      background-color: yellowgreen;
+    }
+    
+  }
+}

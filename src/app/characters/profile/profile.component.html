@@ -1,3 +1,25 @@
-<p>
-  character profile works! for ID {{ id }}
-</p>
+<img class="img-background" [src]="getUrl('../../../assets/chars/',character.imagePath)" alt="">
+
+<ion-header class="ion-no-border">
+  <div class="app-bar">
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-icon src="../../../assets/icons/back.svg"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="head">
+    <ion-card-subtitle>{{ character.alterEgo }}</ion-card-subtitle>
+    <ion-card-title>{{ character.name }}</ion-card-title>
+  </div>
+
+  <div class="info">
+    <div class="info-list">
+    </div>
+    <div class="info-container">
+    </div>
+  </div>
+</ion-content>
