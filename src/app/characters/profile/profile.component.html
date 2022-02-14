@@ -1,10 +1,10 @@
-<img class="img-background" [src]="getUrl('../../../assets/chars/',character.imagePath)" alt="">
+<img *ngIf="character.imagePath" class="img-background" [src]="getImg(character.imagePath)" alt="">
 
 <ion-header class="ion-no-border">
   <div class="app-bar">
     <ion-toolbar>
       <ion-buttons>
-        <ion-icon src="../../../assets/icons/back.svg"></ion-icon>
+        <ion-icon src="../../../assets/icons/back.svg" (click)="goTo('home')"></ion-icon>
       </ion-buttons>
     </ion-toolbar>
   </div>
@@ -18,7 +18,16 @@
 
   <div class="info">
     <div class="info-list">
+      <swiper [config]="iconSlideOptions">
+        <ng-template swiperSlide *ngFor="let item of icons">
+          <div class="container">
+            <ion-icon [src]="item.path"></ion-icon>
+            <ion-card-subtitle>{{ item.content }}</ion-card-subtitle>
+          </div>
+        </ng-template>
+      </swiper>
     </div>
+
     <div class="info-container">
     </div>
   </div>

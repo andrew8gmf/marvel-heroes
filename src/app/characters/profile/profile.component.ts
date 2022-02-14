@@ -1,19 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CharacterService } from '../../services/character.service';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ProfileComponent implements OnInit {
 
   id;
   character = [];
-  categories = [];
+  abilities;
+  characteristics; height; weight;
+  movies;
 
-  constructor(private route: ActivatedRoute, private characterService: CharacterService) {
+  icons = [];
+  public iconSlideOptions: any = { slidesPerView: 4, freeMode: true }
+
+  constructor(private route: ActivatedRoute, private router: Router, private characterService: CharacterService) {
     this.getData();
   }
 
@@ -23,22 +29,36 @@ export class ProfileComponent implements OnInit {
 
   getData() {
     this.characterService.getData().subscribe(data => {
-      for (var key in data) {
-        this.categories.push(data[key])
-      }
+      for (var cat in data) {
+        for (var char in data[cat]) {
+          if (data[cat][char].id == this.id) {
+            this.character = data[cat][char]
+            this.abilities = data[cat][char].abilities
+            this.characteristics = data[cat][char].characteristics
+            this.height = data[cat][char].characteristics.height
+            this.weight = data[cat][char].characteristics.weight
+            this.movies = data[cat][char].movies
 
-      for (var key in this.categories) {
-        this.character = this.categories[key].find(x => x.id == this.id)
-        if (this.character) {
-          console.log(this.character)
-          return this.character
+            this.icons = [
+              { path: '../../../assets/icons/age.svg', content: this.characteristics.birth },
+              { path: '../../../assets/icons/weight.svg', content: this.weight.value },
+              { path: '../../../assets/icons/height.svg', content: this.height.value },
+              { path: '../../../assets/icons/universe.svg', content: this.characteristics.universe }
+            ];
+
+            return this.character, this.abilities, this.characteristics, this.height, this.weight, this.movies
+          }
         }
       }
     });
   }
 
-  getUrl(x,y) {
-    return x+y;
+  getImg(x) {
+    return '../../../assets/chars/' + x;
+  }
+
+  goTo(x) {
+    this.router.navigate([x]);
   }
 
 }

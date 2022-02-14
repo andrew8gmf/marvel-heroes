@@ -8,13 +8,15 @@ import { CharactersPageRoutingModule } from './characters-routing.module';
 
 import { CharactersPage } from './characters.page';
 import { ProfileComponent } from './profile/profile.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CharactersPageRoutingModule
+    CharactersPageRoutingModule,
+    SwiperModule
   ],
   declarations: [CharactersPage, ProfileComponent]
 })

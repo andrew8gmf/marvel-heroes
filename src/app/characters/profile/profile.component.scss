@@ -1,3 +1,6 @@
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
+
 @font-face {
   font-family: "Gilroy Semi-bold";
   src: url("../../../assets/fonts/gilroy-semibold.ttf") format("truetype");
@@ -92,7 +95,40 @@ ion-content {
 
     .info-list {
       height: 48px;
-      background-color: aqua;
+
+      .swiper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .swiper-slide {
+          width: 60px;
+          height: 48px;
+
+          .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            ion-icon {
+              height: 20px;
+              filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(103%) contrast(103%);
+            }
+
+            ion-card-subtitle {
+              font-family: "Gilroy Medium";
+              color: #FFF;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 100%;
+            }
+          }
+        }
+        }
     }
 
     .info-container {
