@@ -92,6 +92,7 @@ ion-content {
       margin-bottom: 8px;
       opacity: 75%;
     }
+
     ion-card-title {
       font-family: "Gilroy Heavy";
       color: #FFF;
@@ -152,6 +153,7 @@ ion-content {
       margin-top: 24px;
 
       ion-card-content {
+        padding: 0;
         font-family: "Gilroy Medium";
         color: #FFF;
         font-weight: 500;
@@ -160,6 +162,32 @@ ion-content {
         opacity: 75%;
       }
     }
-    
+  }
+
+  .abilities {
+    margin-top: 32px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+
+    ion-card-title {
+      font-family: "Gilroy Bold";
+      color: #FFF;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 100%;
+    }
+
+    .stats {
+      margin-top: 24px;
+      max-width: 375px;
+      height: 156px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0 45px 0 24px;
+
+      background-color: aqua;
+    }
   }
 }
