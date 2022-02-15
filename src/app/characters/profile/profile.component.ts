@@ -41,11 +41,11 @@ export class ProfileComponent implements OnInit {
 
             this.icons = [
               { path: '../../../assets/icons/age.svg', content: this.characteristics.birth },
-              { path: '../../../assets/icons/weight.svg', content: this.weight.value },
-              { path: '../../../assets/icons/height.svg', content: this.height.value },
+              { path: '../../../assets/icons/weight.svg', content: this.weight.value + ' ' + this.weight.unity },
+              { path: '../../../assets/icons/height.svg', content: this.height.value + ' ' + this.weight.unity },
               { path: '../../../assets/icons/universe.svg', content: this.characteristics.universe }
             ];
-
+            console.log(this.character)
             return this.character, this.abilities, this.characteristics, this.height, this.weight, this.movies
           }
         }
