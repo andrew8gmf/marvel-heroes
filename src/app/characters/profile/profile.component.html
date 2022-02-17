@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <img *ngIf="character.imagePath" class="img-background" [src]="getImg(character.imagePath)" alt="">
+  <img *ngIf="character.imagePath" class="img-background" [src]="getCharImg(character.imagePath)" alt="">
 </div>
 
 <ion-header class="ion-no-border">
@@ -45,5 +45,17 @@
         <div class="stats"></div>
       </div>
     </div>
+  </div>
+
+  <div class="movies">
+    <ion-card-title>Filmes</ion-card-title>
+
+    <swiper [config]="MovieSlideOptions">
+      <ng-template swiperSlide *ngFor="let movie of movies">
+        <div class="img-container">
+          <img [src]="getMovieImg(movie)">
+        </div>
+      </ng-template>
+    </swiper>
   </div>
 </ion-content>

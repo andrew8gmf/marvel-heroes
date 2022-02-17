@@ -18,7 +18,9 @@ export class ProfileComponent implements OnInit {
 
   icons = [];
   attributes = [];
+
   public iconSlideOptions: any = { slidesPerView: 4, freeMode: true }
+  public MovieSlideOptions: any = { slidesPerView: 2.5, freeMode: true }
 
   constructor(private route: ActivatedRoute, private router: Router, private characterService: CharacterService) {
     this.getData();
@@ -63,8 +65,12 @@ export class ProfileComponent implements OnInit {
     });
   }
 
-  getImg(x) {
+  getCharImg(x) {
     return '../../../assets/chars/' + x;
+  }
+
+  getMovieImg(x) {
+    return '../../../assets/' + x;
   }
 
   goTo(x) {
