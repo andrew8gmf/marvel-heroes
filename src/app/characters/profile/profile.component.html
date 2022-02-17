@@ -38,6 +38,12 @@
   <div class="abilities">
     <ion-card-title>Habilidades</ion-card-title>
 
-    <div class="stats"></div>
+    <div class="abilities-container">
+      <div class="attribute" *ngFor="let item of attributes">
+        <ion-card-subtitle>{{ item.name }}</ion-card-subtitle>
+
+        <div class="stats"></div>
+      </div>
+    </div>
   </div>
 </ion-content>

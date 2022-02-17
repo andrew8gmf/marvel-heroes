@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit {
   movies;
 
   icons = [];
+  attributes = [];
   public iconSlideOptions: any = { slidesPerView: 4, freeMode: true }
 
   constructor(private route: ActivatedRoute, private router: Router, private characterService: CharacterService) {
@@ -45,6 +46,15 @@ export class ProfileComponent implements OnInit {
               { path: '../../../assets/icons/height.svg', content: this.height.value + ' ' + this.weight.unity },
               { path: '../../../assets/icons/universe.svg', content: this.characteristics.universe }
             ];
+
+            this.attributes = [
+              { name: 'Força', value: this.abilities.force },
+              { name: 'Inteligência', value: this.abilities.intelligence },
+              { name: 'Agilidade', value: this.abilities.agility },
+              { name: 'Resistência', value: this.abilities.endurance },
+              { name: 'Velocidade', value: this.abilities.velocity }
+            ];
+
             console.log(this.character)
             return this.character, this.abilities, this.characteristics, this.height, this.weight, this.movies
           }

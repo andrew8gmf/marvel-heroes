@@ -29,6 +29,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("../../../assets/fonts/gilroy-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .ion-page {
   background-color: #000;
 }
@@ -179,15 +186,38 @@ ion-content {
       line-height: 100%;
     }
 
-    .stats {
+    .abilities-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
       margin-top: 24px;
-      max-width: 375px;
+      width: 375px;
       height: 156px;
       margin-right: auto;
       margin-left: auto;
-      padding: 0 45px 0 24px;
+      padding-right: 48px;
 
-      background-color: aqua;
+      .attribute {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        ion-card-subtitle {
+          font-family: "Gilroy Regular";
+          color: #FFF;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 100%;
+          opacity: 75%;
+        }
+
+        .stats {
+          width: 214px;
+          height: 12px;
+          background-color: aqua;
+        }
+      }
     }
   }
 }
