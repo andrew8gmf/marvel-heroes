@@ -31,7 +31,11 @@ ion-content {
 
   .wrapper {
     position: absolute;
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     max-width: 375px;
     margin-top: -64px;
   }
@@ -43,7 +47,7 @@ ion-content {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0,0,0,1) 98%);
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 50%, rgb(0, 0, 0) 90%);
     z-index: 0;
   }
 
@@ -57,7 +61,6 @@ ion-content {
     ion-card-subtitle {
       font-family: "Gilroy Medium";
       color: var(--ion-color-primary-white);
-      font-weight: 500;
       font-size: 16px;
       margin-bottom: 8px;
       opacity: 75%;
@@ -66,9 +69,7 @@ ion-content {
     ion-card-title {
       font-family: "Gilroy Heavy";
       color: var(--ion-color-primary-white);
-      font-weight: 900;
       font-size: 40px;
-      line-height: 100%;
       max-width: 155px;
     }
   }
@@ -109,9 +110,7 @@ ion-content {
             ion-card-subtitle {
               font-family: "Gilroy Medium";
               color: var(--ion-color-primary-white);
-              font-weight: 500;
               font-size: 12px;
-              line-height: 100%;
               margin-bottom: 2px;
             }
           }
@@ -126,9 +125,7 @@ ion-content {
         padding: 0;
         font-family: "Gilroy Medium";
         color: var(--ion-color-primary-white);
-        font-weight: 500;
         font-size: 14px;
-        line-height: 100%;
         opacity: 75%;
       }
     }
@@ -144,9 +141,7 @@ ion-content {
     ion-card-title {
       font-family: "Gilroy Bold";
       color: var(--ion-color-primary-white);
-      font-weight: 700;
       font-size: 18px;
-      line-height: 100%;
     }
 
     .abilities-container {
@@ -169,9 +164,7 @@ ion-content {
         ion-card-subtitle {
           font-family: "Gilroy Regular";
           color: var(--ion-color-primary-white);
-          font-weight: 400;
           font-size: 12px;
-          line-height: 100%;
           opacity: 75%;
         }
 
@@ -195,9 +188,7 @@ ion-content {
     ion-card-title {
       font-family: "Gilroy Bold";
       color: var(--ion-color-primary-white);
-      font-weight: 700;
       font-size: 18px;
-      line-height: 100%;
     }
 
     .swiper {
