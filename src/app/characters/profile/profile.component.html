@@ -40,7 +40,23 @@
       <div class="attribute" *ngFor="let item of attributes">
         <ion-card-subtitle>{{ item.name }}</ion-card-subtitle>
 
-        <div class="stats"></div>
+        <ion-list class="stats">
+          <div *ngFor="let point of stats; let i = index">
+            <ng-container *ngIf="i > item.formatted; else second">
+              <ion-item class="unmarked"></ion-item>
+            </ng-container>
+
+            <ng-template #second>
+              <ng-container *ngIf="i === item.formatted; else third">
+                <ion-item class="matched"></ion-item>
+              </ng-container>
+            </ng-template>
+
+            <ng-template #third>
+              <ion-item class="marked"></ion-item>
+            </ng-template>
+          </div> 
+        </ion-list>
       </div>
     </div>
   </div>

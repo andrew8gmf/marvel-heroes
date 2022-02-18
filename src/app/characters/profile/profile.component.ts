@@ -18,6 +18,7 @@ export class ProfileComponent implements OnInit {
 
   icons = [];
   attributes = [];
+  stats = [];
 
   public iconSlideOptions: any = { slidesPerView: 4, freeMode: true }
   public MovieSlideOptions: any = { slidesPerView: 2.5, freeMode: true }
@@ -50,13 +51,15 @@ export class ProfileComponent implements OnInit {
             ];
 
             this.attributes = [
-              { name: 'Força', value: this.abilities.force },
-              { name: 'Inteligência', value: this.abilities.intelligence },
-              { name: 'Agilidade', value: this.abilities.agility },
-              { name: 'Resistência', value: this.abilities.endurance },
-              { name: 'Velocidade', value: this.abilities.velocity }
+              { name: 'Força', value: this.abilities.force, formatted: Math.round(this.abilities.force * 44 / 100) },
+              { name: 'Inteligência', value: this.abilities.intelligence, formatted: Math.round(this.abilities.intelligence * 44 / 100) },
+              { name: 'Agilidade', value: this.abilities.agility, formatted: Math.round(this.abilities.agility * 44 / 100) },
+              { name: 'Resistência', value: this.abilities.endurance, formatted: Math.round(this.abilities.endurance * 44 / 100) },
+              { name: 'Velocidade', value: this.abilities.velocity, formatted: Math.round(this.abilities.velocity * 44 / 100) }
             ];
 
+            this.stats = Array(44).fill(0);
+            
             console.log(this.character)
             return this.character, this.abilities, this.characteristics, this.height, this.weight, this.movies
           }

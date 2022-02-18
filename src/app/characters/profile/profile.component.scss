@@ -175,9 +175,31 @@ ion-content {
         }
 
         .stats {
-          width: 214px;
+          width: 218px;
           height: 12px;
-          background-color: aqua;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          background-color: transparent;
+
+          .marked {
+            width: 1px;
+            height: 8px;
+            margin-right: 4px;
+          }
+
+          .matched {
+            width: 1px;
+            height: 12px;
+            margin-right: 4px;
+          }
+
+          .unmarked {
+            width: 1px;
+            height: 8px;
+            margin-right: 4px;
+            opacity: 25%;
+          }
         }
       }
     }
