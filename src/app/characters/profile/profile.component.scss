@@ -30,14 +30,14 @@ ion-content {
   --background: transparent;
 
   .wrapper {
+    margin-top: -104px;
+    max-width: 375px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    max-width: 375px;
-    margin-top: -64px;
   }
   
   .wrapper:before {
@@ -47,8 +47,14 @@ ion-content {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(255,0,0,0) 50%, rgb(0, 0, 0) 90%);
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 50%, rgb(0, 0, 0) 80%);
     z-index: 0;
+  }
+
+  .img-background {
+    width: 495px;
+    height: 812px;
+    object-fit: cover;
   }
 
   .head {
