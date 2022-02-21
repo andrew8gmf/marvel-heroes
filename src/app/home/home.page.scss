@@ -1,24 +1,22 @@
 ion-header {
-  .app-bar {
-    ion-toolbar {
-      height: 64px;
-  
-      ion-buttons {
-        max-width: 375px;
-        margin: auto auto;
-        padding: 0 24px;
+  ion-toolbar {
+    height: 64px;
 
-        ion-icon {
-          width: 20px;
-          height: 15px;
-        }
-        
-        img {
-          width: 71px;
-          height: 26px;
-          vertical-align: middle;
-          margin: auto auto;
-        }
+    ion-buttons {
+      max-width: 375px;
+      margin: auto auto;
+      padding: 0 24px;
+
+      ion-icon {
+        width: 20px;
+        height: 15px;
+      }
+      
+      img {
+        width: 71px;
+        height: 26px;
+        vertical-align: middle;
+        margin: auto auto;
       }
     }
   }
@@ -34,17 +32,14 @@ ion-content {
 
     ion-card-subtitle {
       font-family: "Gilroy Semi-bold";
-      font-weight: 600;
       font-size: 14px;
-      color: #B7B7C8;
+      color: var(--ion-color-primary-grey);
       margin-bottom: 8px;
     }
     ion-card-title {
       font-family: "Gilroy Heavy";
-      font-weight: 900;
       font-size: 32px;
-      color: #313140;
-      line-height: 100%;
+      color: var(--ion-color-primary-dark);
     }
   }
 
@@ -81,6 +76,7 @@ ion-content {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
+    padding-left: 24px;
 
     ion-toolbar {
       .title-container {
@@ -89,64 +85,59 @@ ion-content {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 48px;
-        padding: 0 24px;
+        padding-right: 24px;
 
         ion-card-title {
           font-family: "Gilroy Bold";
-          font-weight: 700;
           font-size: 18px;
-          color: #F2264B;
-          line-height: 100%;
+          color: var(--ion-color-primary-red);
         }
 
         ion-card-subtitle {
           font-family: "Gilroy Medium";
-          font-weight: 500;
           font-size: 14px;
-          color: #B7B7C8;
+          color: var(--ion-color-primary-grey);
         }
       }
 
       .swiper {
         margin-top: 16px;
-        margin-left: 16px;
         
         .swiper-slide {
-          margin: 0 8px;
+          width: 140px;
+          height: 230px;
+          padding-right: 16px;
           
           .img-container {
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            width: 140px;
-            height: 230px;
-
+            
             img {
-              position: absolute;
-              object-fit: fill;
-              object-position: center;
+              width: 100%;
+              height: 100%;
               border-radius: 16px;
+              object-fit: cover;
             }
 
             .text-container {
+              position: absolute;
+              text-align: left;
               padding: 12px;
 
               ion-card-subtitle {
                 font-family: "Gilroy Medium";
-                color: #FFF;
-                font-weight: 500;
+                color: var(--ion-color-primary-white);
                 font-size: 10px;
                 margin-bottom: 2px;
-                text-align: left;
               }
   
               ion-card-title {
                 font-family: "Gilroy Heavy";
-                color: #FFF;
-                font-weight: 900;
+                color: var(--ion-color-primary-white);
                 font-size: 20px;
-                line-height: 100%;
-                text-align: left;
                 margin: 0;
               }
             }
