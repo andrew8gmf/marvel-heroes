@@ -60,7 +60,6 @@ export class ProfileComponent implements OnInit {
 
             this.stats = Array(44).fill(0);
             
-            console.log(this.character)
             return this.character, this.abilities, this.characteristics, this.height, this.weight, this.movies
           }
         }

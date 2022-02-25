@@ -36,8 +36,8 @@
       </div>
       <swiper [config]="slideOptions">
         <ng-template swiperSlide *ngFor="let character of category">
-          <div class="img-container" (click)="go('characters/',character.id)">
-            <img [src]="getUrl('../assets/chars/',character.imagePath)" alt="">
+          <div class="img-container" (click)="goTo(character.id)">
+            <img [src]="getCharImg(character.imagePath)" alt="">
             <div class="text-container">
               <ion-card-subtitle>{{character.alterEgo}}</ion-card-subtitle>
               <ion-card-title>{{character.name}}</ion-card-title>

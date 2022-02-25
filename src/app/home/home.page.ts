@@ -9,6 +9,7 @@ import { CharacterService } from '../services/character.service';
   encapsulation: ViewEncapsulation.None
 })
 export class HomePage {
+
   public categoryIcons: Array<any> = [
     { icon: '../../assets/icons/hero.svg', color: 'linear-gradient(180deg, #005BEA 0%, #00C6FB 100%)' },
     { icon: '../../assets/icons/villain.svg', color: 'linear-gradient(180deg, #ED1D24 0%, #ED1F69 100%)' },
@@ -35,21 +36,20 @@ export class HomePage {
 
   getData() {
     this.characterService.getData().subscribe(data => {
-      console.log(data)
       for (var key in data) {
         this.categories.push(data[key])
       }
-      console.log(this.categories)
+
+      return this.categories
     });
   }
 
-  getUrl(x,y) {
-    return x+y;
+  getCharImg(x) {
+    return '../assets/chars/' + x;
   }
 
-  go(x,y) {
-    const z = x+y
-    this.router.navigate([z]);
+  goTo(x) {
+    this.router.navigate(['characters/' + x]);
   }
 
 }
