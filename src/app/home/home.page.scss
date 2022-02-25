@@ -24,10 +24,8 @@ ion-header {
 
 ion-content {
   .head {
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
     max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 24px;
 
     ion-card-subtitle {
@@ -44,10 +42,8 @@ ion-content {
   }
 
   .categories {
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
     max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 24px;
     
     .swiper-slide {
@@ -73,9 +69,7 @@ ion-content {
 
   .lists {
     max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
+    margin: 0 auto 48px auto;
     padding-left: 24px;
 
     ion-toolbar {

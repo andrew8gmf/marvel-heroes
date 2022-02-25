@@ -17,8 +17,7 @@ ion-header {
       ion-icon {
         width: 20px;
         height: 12.48px;
-        margin: auto 0;
-        margin-right: auto;
+        margin: auto auto auto 0;
         
         filter: invert(98%) sepia(0%) saturate(0%) hue-rotate(25deg) brightness(103%) contrast(103%);
       }
@@ -30,13 +29,12 @@ ion-content {
   --background: transparent;
 
   .wrapper {
-    margin-top: -104px;
+    margin: 0 auto 0 auto;
     max-width: 375px;
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
   
@@ -58,10 +56,8 @@ ion-content {
   }
 
   .head {
-    margin-top: 228px;
+    margin: 228px auto 0 auto;
     max-width: 375px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 0 24px;
 
     ion-card-subtitle {
@@ -81,28 +77,22 @@ ion-content {
   }
 
   .info {
-    margin-top: 48px;
+    margin: 48px auto 0 auto;
     max-width: 375px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 0 24px;
 
     .info-list {
       height: 48px;
 
       .swiper {
-        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         .swiper-slide {
-          width: 60px;
-          height: 48px;
-
           .container {
-            width: 100%;
-            height: 100%;
+            width: 60px;
+            height: 48px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -138,10 +128,8 @@ ion-content {
   }
 
   .abilities {
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
     max-width: 375px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 0 24px;
 
     ion-card-title {
@@ -155,11 +143,9 @@ ion-content {
       flex-direction: column;
       justify-content: space-between;
 
-      margin-top: 24px;
+      margin: 24px auto 0 auto;
       width: 375px;
       height: 156px;
-      margin-right: auto;
-      margin-left: auto;
       padding-right: 48px;
 
       .attribute {
@@ -206,11 +192,8 @@ ion-content {
   }
 
   .movies {
-    margin-top: 32px;
-    margin-bottom: 48px;
+    margin: 32px auto 48px auto;
     max-width: 375px;
-    margin-right: auto;
-    margin-left: auto;
     padding-left: 24px;
 
     ion-card-title {
