@@ -4,12 +4,11 @@ app-profile {
   ion-header {
     ion-toolbar {
       --background: transparent;
-      --ion-color-base: transparent !important;
-      --ion-toolbar-background-color: transparent;
       height: 64px;
   
       ion-buttons {
         max-width: 375px;
+        height: 64px;
         margin: auto auto;
         padding: 0 24px;
   

@@ -9,7 +9,9 @@ import { CharacterService } from '../../services/character.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ProfileComponent implements OnInit {
-
+  
+  public aColor: string = 'rgb(0, 0, 0, 0)';
+  
   id;
   character = [];
   abilities;
@@ -77,6 +79,10 @@ export class ProfileComponent implements OnInit {
 
   goTo(x) {
     this.router.navigate([x]);
+  }
+
+  scrolling() {
+    return this.aColor = 'rgb(0, 0, 0, .7)';
   }
 
 }
