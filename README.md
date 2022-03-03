@@ -46,6 +46,9 @@ $ cd marvel-heroes
 # install the dependencies
 $ yarn install
 
+# run the json-server
+$ yarn mock:server
+
 # run the application
 $ yarn start
 ```
